@@ -14,7 +14,13 @@ export function Rating() {
 }
 
 function Star(props: any) {
-    debugger
     console.log("Star rendering")
-    return <span><b>star</b> </span>
+    if (props.selected === true) {
+        return <span><b>star</b> </span>
+    } else {
+        return <span>star </span>
+    }
+
+
+
 }
