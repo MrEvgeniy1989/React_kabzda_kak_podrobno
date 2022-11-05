@@ -1,6 +1,12 @@
 import React from 'react';
 import './App.css';
 
+function Hello() {
+    debugger
+    alert('Hello IT-KAMASUTRA')
+}
+// hello();
+
 function App() {
     console.log("App rendering")
     return (
