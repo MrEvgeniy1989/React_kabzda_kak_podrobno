@@ -6,8 +6,8 @@ export function Rating() {
         <div>
             <Star selected={true}/>
             <Star selected={true}/>
-            <Star selected={false}/>
-            <Star selected={false}/>
+            <Star selected={true}/>
+            <Star selected={true}/>
             <Star selected={false}/>
         </div>
     );
