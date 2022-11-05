@@ -4,16 +4,16 @@ export function Rating() {
     console.log("Rating rendering")
     return (
         <div>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
+            <Star selected={true}/>
+            <Star selected={true}/>
+            <Star selected={false}/>
+            <Star selected={false}/>
+            <Star selected={false}/>
         </div>
     );
 }
 
-function Star() {
+function Star(props: any) {
     console.log("Star rendering")
-    return <span>star-</span>
+    return <span><b>star</b> </span>
 }
