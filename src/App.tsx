@@ -7,18 +7,23 @@ function App() {
     console.log("App rendering")
     return (
         <div>
-            <AppTitle/>
+            <PageTitle/>
             Article 1
             <Rating value={3}/>
             <Accordion/>
             Article 2
+            <Rating  value={0}/>
+            <Rating  value={1}/>
+            <Rating  value={2}/>
+            <Rating  value={3}/>
             <Rating  value={4}/>
+            <Rating  value={5}/>
         </div>
     );
 }
 
-function AppTitle() {
-    console.log("AppTitle rendering")
+function PageTitle() {
+    console.log("PageTitle rendering")
     return <div>This is APP Component</div>
 }
 
