@@ -17,7 +17,6 @@ function AppTitle() {
 }
 
 function Rating() {
-    debugger
     return (
         <div>
             <Star/>
