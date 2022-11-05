@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Rating() {
+export function Rating(props: any) {
     console.log("Rating rendering")
     return (
         <div>
