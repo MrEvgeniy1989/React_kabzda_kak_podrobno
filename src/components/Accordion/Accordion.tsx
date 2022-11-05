@@ -14,7 +14,7 @@ function AccordionTitle() {
     console.log("AccordionTitle rendering")
     return (
         <h3>Меню</h3>
-    )
+    );
 }
 
 function AccordionBody() {
@@ -25,7 +25,7 @@ function AccordionBody() {
             <li>2</li>
             <li>3</li>
         </ul>
-    )
+    );
 }
 
 export default Accordion;
