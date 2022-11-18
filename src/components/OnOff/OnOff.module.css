@@ -1,0 +1,18 @@
+.onOff {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.on {
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    border-radius: 10px;
+}
+.off {
+    width: 100px;
+    background-color: red;
+    text-align: center;
+    border-radius: 10px;
+}
