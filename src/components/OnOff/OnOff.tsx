@@ -1,24 +1,34 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from './OnOff.module.css'
 
 export type onOffPropsType = {
-    onOffValue: boolean
+    // onOffValue: boolean
 }
 
 export function OnOff(props: onOffPropsType) {
-    let switch1, switch2;
-    if (props.onOffValue) {
-        switch1 = s.on
-        switch2 = s.off
+
+    const [on, setOn] = useState(false)
+
+    let onStyle, offStyle, indicatorStyle
+    if (on) {
+        onStyle = s.on
+        indicatorStyle = s.indicatorStyleOn
     } else {
-        switch1 = s.off
-        switch2 = s.on
+        offStyle = s.off
+        indicatorStyle = s.indicatorStyleOff
     }
 
     return (
         <div className={s.onOff}>
-            <div className={switch1}>On</div>
-            <div className={switch2}>Off</div>
+            <div className={onStyle} onClick={() => {
+                setOn(true)
+            }}>On
+            </div>
+            <div className={offStyle} onClick={() => {
+                setOn(false)
+            }}>Off
+            </div>
+            <div className={indicatorStyle}></div>
         </div>
     )
 }

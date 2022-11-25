@@ -5,8 +5,6 @@ type RatingPropsType = {
 }
 
 export function Rating(props: RatingPropsType) {
-    console.log("Rating rendering")
-
     return (
         <div>
             <Star selected={props.value > 0}/>
@@ -23,7 +21,6 @@ type StarPropsType = {
 }
 
 function Star(props: StarPropsType) {
-    console.log("Star rendering")
     if (props.selected) {
         return <span><b>star</b> </span>
     } else {
