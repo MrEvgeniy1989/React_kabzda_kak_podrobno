@@ -34,7 +34,7 @@ function App() {
             <Rating value={ratingValue} onClick={setRatingValue}/>
             <UncontrolledRating/>
             <Accordion titleValue={'Menu'} collapsed={accordionCollapsed} onClick={setAccordionCollapsed}/>
-            <UncontrolledOnOff/>
+            <UncontrolledOnOff onChange={setOnOffValue}/> {onOffValue.toString()}
             <OnOff value={onOffValue} onClick={setOnOffValue}/>
         </div>
     );

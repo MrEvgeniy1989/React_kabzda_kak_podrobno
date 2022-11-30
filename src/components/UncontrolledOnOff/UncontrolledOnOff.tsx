@@ -3,6 +3,7 @@ import s from './UncontrolledOnOff.module.css'
 
 export type UncontrolledOnOffPropsType = {
     // onOffValue: boolean
+    onChange: (on: boolean) => void
 }
 
 export function UncontrolledOnOff(props: UncontrolledOnOffPropsType) {
@@ -18,15 +19,21 @@ export function UncontrolledOnOff(props: UncontrolledOnOffPropsType) {
         indicatorStyle = s.indicatorStyleOff
     }
 
+    const onClicked = () => {
+            setOn(true)
+            props.onChange(true)
+    }
+
+    const offClicked = () => {
+        setOn(false)
+        props.onChange(false)
+    }
+
     return (
         <div className={s.onOff}>
-            <div className={onStyle} onClick={() => {
-                setOn(true)
-            }}>On
+            <div className={onStyle} onClick={onClicked}>On
             </div>
-            <div className={offStyle} onClick={() => {
-                setOn(false)
-            }}>Off
+            <div className={offStyle} onClick={offClicked}>Off
             </div>
             <div className={indicatorStyle}></div>
         </div>

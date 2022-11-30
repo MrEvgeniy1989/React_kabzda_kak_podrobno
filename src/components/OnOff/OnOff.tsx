@@ -9,8 +9,6 @@ export type OnOffPropsType = {
 
 export function OnOff(props: OnOffPropsType) {
 
-    // const [on, setOn] = useState(false)
-
     let onStyle, offStyle, indicatorStyle
     if (props.value) {
         onStyle = s.on
