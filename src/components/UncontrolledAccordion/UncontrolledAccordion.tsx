@@ -9,9 +9,7 @@ export function UncontrolledAccordion(props: UncontrolledAccordionPropsType) {
 
     const [collapsed, setCollapsed] = useState<boolean>(false)
 
-    const callBackHandler = () => {
-      return setCollapsed(!collapsed)
-    }
+    const callBackHandler = () => setCollapsed(!collapsed)
 
     return (
         <div>

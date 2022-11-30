@@ -1,0 +1,36 @@
+.onOff {
+    display: grid;
+    grid-template-rows: 22px;
+    grid-template-columns: 70px 70px 10px;
+    grid-gap: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.on {
+    background-color: green;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.off {
+    background-color: red;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.indicatorStyleOn {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: green;
+}
+
+.indicatorStyleOff {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: red;
+}
