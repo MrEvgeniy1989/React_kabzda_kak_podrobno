@@ -4,11 +4,12 @@ import s from './UncontrolledOnOff.module.css'
 export type UncontrolledOnOffPropsType = {
     // onOffValue: boolean
     onChange: (on: boolean) => void
+    defaultOn?: boolean
 }
 
 export function UncontrolledOnOff(props: UncontrolledOnOffPropsType) {
 
-    const [on, setOn] = useState(false)
+    const [on, setOn] = useState(props.defaultOn ? props.defaultOn : false)
 
     let onStyle, offStyle, indicatorStyle
     if (on) {
