@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
-import {Accordion} from './Accordion';
+import {Accordion, AccordionPropsType} from './Accordion';
 import {action} from '@storybook/addon-actions';
+import Button from '@storybook/react/dist/ts3.9/demo/Button';
+import {Story} from '@storybook/react';
 
 export default {
     title: 'Accordion',
@@ -8,6 +10,7 @@ export default {
 };
 
 const callback = action('accordion mode change event fired')
+
 
 export const MenuCollapsedMode = () => <Accordion titleValue={'Menu'} onClick={callback} collapsed={true}/>
 export const UsersUnCollapsedMode = () => <Accordion titleValue={'Users'} onClick={callback} collapsed={false}/>
