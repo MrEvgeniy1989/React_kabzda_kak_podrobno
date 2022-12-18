@@ -32,8 +32,8 @@ function App() {
             {/*<UncontrolledAccordion titleValue={'Menu'}/>*/}
             {/*<UncontrolledRating/>*/}
             <Rating value={ratingValue} onClick={setRatingValue}/>
-            <UncontrolledRating/>
-            <Accordion titleValue={'Menu'} collapsed={accordionCollapsed} onClick={setAccordionCollapsed}/>
+            {/*<UncontrolledRating/>*/}
+            <Accordion titleValue={'Menu'} collapsed={accordionCollapsed} onChange={setAccordionCollapsed} />
             <UncontrolledOnOff onChange={setOnOffValue}/> {onOffValue.toString()}
             <OnOff value={onOffValue} onClick={setOnOffValue}/>
         </div>
