@@ -29,13 +29,13 @@ function App() {
             {/*/!*<UncontrolledOnOff onOffValue={false}/>*!/*/}
             {/*<UncontrolledOnOff/>*/}
             {/*<UncontrolledOnOff/>*/}
-            {/*<UncontrolledAccordion titleValue={'Menu'}/>*/}
+            <UncontrolledAccordion titleValue={'Menu'}/>
             {/*<UncontrolledRating/>*/}
-            <Rating value={ratingValue} onClick={setRatingValue}/>
+            {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
             {/*<UncontrolledRating/>*/}
-            <Accordion titleValue={'Menu'} collapsed={accordionCollapsed} onChange={setAccordionCollapsed} />
-            <UncontrolledOnOff onChange={setOnOffValue}/> {onOffValue.toString()}
-            <OnOff value={onOffValue} onClick={setOnOffValue}/>
+            {/*<Accordion titleValue={'Menu'} collapsed={accordionCollapsed} onChange={setAccordionCollapsed} />*/}
+            {/*<UncontrolledOnOff onChange={setOnOffValue}/> {onOffValue.toString()}*/}
+            {/*<OnOff value={onOffValue} onClick={setOnOffValue}/>*/}
         </div>
     );
 }
