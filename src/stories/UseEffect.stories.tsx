@@ -38,3 +38,33 @@ export const SimpleExample = () => {
         </>
     )
 }
+
+export const SetTimeoutExample = () => {
+    const [fake, setFake] = useState(1)
+    const [counter, setCounter] = useState(1)
+
+    console.log('SetTimeoutExample')
+
+    // useEffect(() => {
+    //
+    //     setTimeout(()=>{
+    //         console.log('useEffect every render')
+    //         document.title = counter.toString()
+    //     }, 1000)
+    //
+    // }, [])
+
+    useEffect(() => {
+        setInterval(()=>{
+            setCounter(state => state + 1)
+        }, 1000)
+
+    }, [])
+
+
+    return (
+        <>
+            Hello, counter: {counter} fake: {fake}
+        </>
+    )
+}
